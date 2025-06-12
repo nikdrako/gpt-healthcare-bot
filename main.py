@@ -220,6 +220,7 @@ async def message_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
     if not update.message:
         return
     chat_id = update.effective_chat.id
+
     user_text = update.message.text.replace("/message", "").strip()
     save_message(chat_id, "user", user_text)
     save_message_history(chat_id, "user", user_text)
