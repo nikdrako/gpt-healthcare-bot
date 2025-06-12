@@ -1,4 +1,5 @@
 .env
-logs/
+logs/users_history.jsonl
+logs/chat_logs.jsonl
 __pycache__/
 *.pyc.env
